@@ -3,10 +3,10 @@ README
 ## Dependencies ##
 
 
-* java JDK 8+ (tested with 1.8.0_102)
-* Selenium 2.53.0
-* junit 1.4.1
-* Maven 3.3.9
+* java JDK 8+ (tested with 8.0_321)
+* Selenium 3.141.59
+* junit 4.13.1
+* Maven 3.8.5
 
 
 
