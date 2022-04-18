@@ -43,10 +43,11 @@ public class BasePage implements Config {
 	private ChromeOptions options;
 
 	public BasePage(WebDriver driver) {
+		WebDriverManager.chromedriver().clearDriverCache();
 		WebDriverManager.chromedriver().setup();
 		options = new ChromeOptions();
-		options.addArguments("window-size=4000,3000");
-		options.addArguments("--headless");
+		// options.addArguments("window-size=4000,3000");
+		// options.addArguments("--headless");
 	}
 
 	@BeforeAll
