@@ -46,6 +46,7 @@ public class BasePage implements Config {
 		WebDriverManager.chromedriver().setup();
 		options = new ChromeOptions();
 		options.addArguments("window-size=4000,3000");
+		//options.addArguments("--headless");
 	}
 
 	@BeforeAll
@@ -412,7 +413,9 @@ public class BasePage implements Config {
 	 * @param locator
 	 */
 	public void click(By locator) {
-		find(locator).click();
+		WebElement ele = find(locator);
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("arguments[0].click()", ele);
 	}
 
 	/**

@@ -36,9 +36,9 @@ public class BulkEditTest extends BaseTest {
 
 	@Before
 	public void Setup() {
-		if (host != "localhost") {
-			driver.manage().window().maximize();
-		}
+
+		if (host != "localhost") {}
+
 		// quickAdd = new QuickAddPage(driver);
 		pathSummary = new PathSummaryPage(driver);
 		createPath = new CreateNewPathPage(driver);

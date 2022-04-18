@@ -4,7 +4,6 @@ import CommPageObjects.*;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import java.util.Random;
@@ -56,7 +55,7 @@ public class PathDetailAntennaTest extends BaseTest {
 	 */
 
 	@Test
-	public void pathDetailAntenna_willAutoFill_whenThereIsAMatchOnAntennaCode() {
+	public void pathDetailAntenna_willAutoFill_whenThereIsAMatchOnAntennaCode() throws InterruptedException {
 		createPath.createBrandNewProjectPath("Antenna Code onBlur" + randomNumber, "This is the Default");
 		createPath.contactLookup(COMPANYCODE, MANUFACTURERNAME, "", 0);
 		pathSummary.changeToSi();

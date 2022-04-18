@@ -105,9 +105,8 @@ public class PathDetailTest extends BaseTest {
 		database = new AntennaDataBasePage(driver);
 		pathDBpage = new PathDataBasePage(driver);
 		loginPage.selectUserAndLogin("admin");
-		if (host != "localhost") {
-			driver.manage().window().maximize();
-		}
+
+		if (host != "localhost") {}
 
 	}
 

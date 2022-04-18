@@ -2,8 +2,8 @@ package CommTests;
 
 public interface Config {
 
-    final String baseUrl = System.getProperty("baseUrl", "https://qalite.legosandbox.com");
-	// final String baseUrl = System.getProperty("baseUrl", "https://master.legosandbox.com");
+    //final String baseUrl = System.getProperty("baseUrl", "https://qalite.legosandbox.com");
+	final String baseUrl = System.getProperty("baseUrl", "https://master.legosandbox.com");
 	//final String baseUrl = System.getProperty("baseUrl", "https://qaauto.legosandbox.com");
 	final String host = System.getProperty("host", "localhost");
 	final String chrome = System.getProperty("browser", "chrome");
